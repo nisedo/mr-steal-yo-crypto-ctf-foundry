@@ -1,0 +1,199 @@
+{
+	"id": "44443a90bbc14a373a3b54028c870993",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.18",
+	"solcLongVersion": "0.8.18+commit.87f61d96",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"src/jpeg-sniper/LaunchpegErrors.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.4;\n\nerror Launchpeg__CanNotMintThisMany();\nerror Launchpeg__MaxSupplyReached();\nerror Launchpeg__NotEnoughFunds(uint256 fundsSent);\nerror Launchpeg__TransferFailed();\nerror Launchpeg__Unauthorized();\nerror Launchpeg__WrongPhase();"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"src/jpeg-sniper/LaunchpegErrors.sol": {
+				"ast": {
+					"absolutePath": "src/jpeg-sniper/LaunchpegErrors.sol",
+					"exportedSymbols": {
+						"Launchpeg__CanNotMintThisMany": [
+							3
+						],
+						"Launchpeg__MaxSupplyReached": [
+							5
+						],
+						"Launchpeg__NotEnoughFunds": [
+							9
+						],
+						"Launchpeg__TransferFailed": [
+							11
+						],
+						"Launchpeg__Unauthorized": [
+							13
+						],
+						"Launchpeg__WrongPhase": [
+							15
+						]
+					},
+					"id": 16,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".4"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:23:0"
+						},
+						{
+							"errorSelector": "d798adec",
+							"id": 3,
+							"name": "Launchpeg__CanNotMintThisMany",
+							"nameLocation": "63:29:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 2,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "92:2:0"
+							},
+							"src": "57:38:0"
+						},
+						{
+							"errorSelector": "3dbb8d46",
+							"id": 5,
+							"name": "Launchpeg__MaxSupplyReached",
+							"nameLocation": "102:27:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 4,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "129:2:0"
+							},
+							"src": "96:36:0"
+						},
+						{
+							"errorSelector": "06e0c3ff",
+							"id": 9,
+							"name": "Launchpeg__NotEnoughFunds",
+							"nameLocation": "139:25:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 8,
+								"nodeType": "ParameterList",
+								"parameters": [
+									{
+										"constant": false,
+										"id": 7,
+										"mutability": "mutable",
+										"name": "fundsSent",
+										"nameLocation": "173:9:0",
+										"nodeType": "VariableDeclaration",
+										"scope": 9,
+										"src": "165:17:0",
+										"stateVariable": false,
+										"storageLocation": "default",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										},
+										"typeName": {
+											"id": 6,
+											"name": "uint256",
+											"nodeType": "ElementaryTypeName",
+											"src": "165:7:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										},
+										"visibility": "internal"
+									}
+								],
+								"src": "164:19:0"
+							},
+							"src": "133:51:0"
+						},
+						{
+							"errorSelector": "eaa79834",
+							"id": 11,
+							"name": "Launchpeg__TransferFailed",
+							"nameLocation": "191:25:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 10,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "216:2:0"
+							},
+							"src": "185:34:0"
+						},
+						{
+							"errorSelector": "c1679184",
+							"id": 13,
+							"name": "Launchpeg__Unauthorized",
+							"nameLocation": "226:23:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 12,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "249:2:0"
+							},
+							"src": "220:32:0"
+						},
+						{
+							"errorSelector": "38df794b",
+							"id": 15,
+							"name": "Launchpeg__WrongPhase",
+							"nameLocation": "259:21:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 14,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "280:2:0"
+							},
+							"src": "253:30:0"
+						}
+					],
+					"src": "32:251:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

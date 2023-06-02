@@ -7,6 +7,10 @@ import {console} from "forge-std/console.sol";
 // core contracts
 import {FlatLaunchpeg} from "src/jpeg-sniper/FlatLaunchpeg.sol";
 
+import {JpegSniperExploit} from "src/jpeg-sniper/jpeg-sniper-exploit.sol";
+import "src/jpeg-sniper/BaseLaunchpegNFT.sol";
+
+
 
 contract Testing is Test {
 
@@ -37,6 +41,8 @@ contract Testing is Test {
         vm.startPrank(attacker,attacker);
 
         // implement solution here
+        JpegSniperExploit exploit;
+        exploit = new JpegSniperExploit(address(flatLaunchpeg), address(attacker));
 
         vm.stopPrank();
         validation();
